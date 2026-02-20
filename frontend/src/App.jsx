@@ -73,7 +73,7 @@ const App = () => {
         }, 3000);
       })
       .catch((error) => {
-        alert("server exploded ! try again later ");
+        alert(error.response.data.error);
       });
   };
 
